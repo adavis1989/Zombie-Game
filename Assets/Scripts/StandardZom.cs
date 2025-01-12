@@ -2,18 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyClass : MonoBehaviour
+public class StandardZom : EnemyClass
 {
-    public int _attack;
-    public int _health;
-    public int _speed;
-
-
-
     // Start is called before the first frame update
     void Start()
     {
-        
+        _attack = 1;
+        _speed = 5;
+        _health = 10;
     }
 
     // Update is called once per frame
