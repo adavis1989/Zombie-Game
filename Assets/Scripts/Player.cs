@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
             RaycastHit hitInfo;
             if(Physics.Raycast(ray, out hitInfo))
             {
-                Debug.Log("Hit :" + hitInfo.point);
+                //Debug.Log("Hit :" + hitInfo.point);
                 _navMesh.SetDestination(hitInfo.point);
                 _target= hitInfo.point;
             }
